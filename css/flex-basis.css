@@ -1,0 +1,93 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 100px;
+}
+
+.container {
+  border: 5px solid red;
+  background-color: silver;
+  display: flex;
+  flex-flow: row nowrap;
+  width: 1010px;
+  flex-direction: row;
+}
+
+[class*="group"] {
+  height: 250px;
+}
+
+/* flex: flex-grow flex-shrink flex-basis */
+/* flex-basis가 있을 경우 width가 무력화 된다. */
+.group1 {
+  background-color: gold;
+  flex: 0 1 100px;
+  /* flex-basis: 100px;
+  flex-shrink: 1;
+  flex-grow: 1; */
+}
+.group2 {
+  background-color: aqua;
+  flex: 0 1 100px;
+  /* flex-basis: 100px;
+  flex-shrink: 1;
+  flex-grow: 1; */
+}
+.group3 {
+  background-color: lightgreen;
+  flex: 0 1 100px;
+  order: -1;
+  /* flex-basis: 100px;
+  flex-shrink: 1;
+  flex-grow: 0; */
+}
+
+
+.box {
+  border: 5px solid red;
+  width: 1000px;
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 50px;
+
+}
+
+[class^="box-inner"] {
+  border: 5px solid blue;
+  flex: 1 1 200px;
+}
+
+.box-inner1 {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: flex-end;
+  justify-content: flex-end;
+  height: 500px;
+}
+
+.box-inner2 {
+  display: flex;
+  flex: row wrap;
+}
+
+.box-inner2 [class*="box"] {
+  border: 5ox solid green;
+}
+
+.box1 {
+  flex: 0 1 100%;
+}
+
+.box2 {
+  flex: 0 1 50%;
+}
+
+.box3 {
+  flex: 0 1 50%;
+}
+
+.box4 {
+  flex: 0 1 100%;
+}
