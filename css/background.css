@@ -1,0 +1,17 @@
+body {
+  background-color: #d5d5ff;
+}
+
+.container {
+  width: 1000px;
+  height: 400px;
+  /* background-color: rgb(255, 250, 224);
+  background-image: url("../images/airplan.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 50% 0; */
+  /* 백그라운드 사이즈는 백그라운드 속성의 마지막에 넣는다. */
+  /* contain과 cover 차이를 생각하는게 중요!! 이미지의 contain은 세로축, cover는 가로축 기준 */
+  /* url()안의 ""는 경로를 자동으로 찾아준다.  */
+  background: rgb(255, 250, 224) url("../images/airplan.jpg") no-repeat 50% 0 /contain;
+}
